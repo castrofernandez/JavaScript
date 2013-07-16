@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang="es">
+	<head>
+		<meta name="viewport" content="width=device-width"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="author" content="Juan Castro Fernández" />
+		<meta name="description" content="JavaScript sobre HTML5" />
+		<meta name="keywords" content="JavaScript, HTML5" />
+		<meta name="googlebot" content="index, follow" />
+		<meta name="robots" content="index, follow" />
+		<title>JavaScript</title>
+		<link rel="stylesheet" type="text/css" href="transparencias.css">
+		<link href='http://fonts.googleapis.com/css?family=Advent+Pro:100' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<script src="prettify/run_prettify.js"></script>
+		<script src="jquery.js"></script>
+		<script src="transparencias.js"></script>
+		<link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div id="logos">
+				<div class="logo js">JS</div>
+				<div class="logo css">CSS3</div>
+				<div class="logo html">HTML5</div>
+			</div>
+			<h2>HTML5 y el futuro de la Web</h2>
+			<h1>JavaScript</h1>
+			<nav id="indice">
+				 <a id="que" class="activo">Qué es</a> <span class="separador">|</span>
+				 <a id="variables">Variables</a> <span class="separador">|</span>
+				 <a id="condicional">Condicional</a> <span class="separador">|</span>
+				 <a id="bucles">Bucles</a> <span class="separador">|</span>
+				 <a id="funciones">Funciones</a> <span class="separador">|</span>
+				 <a id="dom">DOM</a> <span class="separador">|</span>
+				 <a id="eventos">Eventos</a> <span class="separador">|</span>
+				 <a id="jquery">jQuery</a>
+			</nav>
+		</header>
+		
+		<div id="indice_que" indice="que" class="transparencia actual">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Ejemplos</div>
+					<div class="etiqueta-activa">Info</div>
+				</div>
+				<h3>¿Qué es JavaScript?</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>Es un lenguaje de programación dinámico, orientado a objetos, basado en prototipos y débilmente tipado.</li>
+					<li><a href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf">Standard ECMA-262</a> (Versión actual 5.1)</li>
+					<li>Los navegadores web incorporan un motor, o intérprete, de JavaScript que permite ejecutar código y crear así páginas dinámicas.</li>
+					<li>Es un elemento básico de la llamada web 2.0</li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">1</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="que">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Ejemplos</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>¿Qué es JavaScript?</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li><a href="http://www.google.es">Google</a></li>
+					<li><a href="http://www.apple.com/es/mac/">Apple</a></li>
+					<li><a href="http://www.microsoft.com">Microsoft</a></li>
+					<li><a href="http://www.amazon.com">Amazon</a></li>
+					<li><a href="https://mail.google.com">GMail</a></li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">1</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="que">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Incon.</div>
+					<div class="etiqueta-activa">Ventaja</div>
+				</div>
+				<h3>Ventajas e inconvenientes</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<h4>Ventajas</h4>
+				<ul>
+					<li>La web se vuelve dinámica.</li>
+					<li>Posibilita las aplicaciones web.</li>
+					<li>Disminuye el tráfico con el servidor.</li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">2</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="que">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Incon.</div>
+					<div class="etiqueta">Ventaja</div>
+				</div>
+				<h3>Ventajas e inconvenientes</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<h4>Inconvenientes</h4>
+				<span>Los inconvenientes se derivan de un mal uso por parte del desarrollador.</span>
+				<ul>
+					<li>Falta de seguridad.</li>
+					<li>Deficiencias de accesibilidad.</li>
+					<li>Ausencia de navegabilidad alternativa.</li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">2</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="que">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Ejemplo 2</div>
+					<div class="etiqueta-activa">Ejemplo 1</div>
+				</div>
+				<h3>Uso</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<br />
+				A través de la etiqueta <strong>script</strong> podemos introducir código JavaScript en cualquier parte del documento.
+				<br />
+				El código se introduce entre las etiquetas de inicio y cierre.
+				<br />
+				<pre class="prettyprint">
+&lt;script type=“text/javascript”&gt;
+	alert("Hola Mundo");
+&lt;/script&gt;
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">3</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="que">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Ejemplo 2</div>
+					<div class="etiqueta">Ejemplo 1</div>
+				</div>
+				<h3>Uso</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<br />
+				Otra alternativa más elegante consiste en colocar todo el código JavaScript en uno o más ficheros externos y después enlazar ese fichero en el documento HTML.
+				<br />
+				<pre class="prettyprint">
+&lt;script src="codigo.js">&lt;/script&gt;
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">3</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div id="indice_variables" indice="variables" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Array</div>
+					<div class="etiqueta">Ejemplo</div>
+					<div class="etiqueta-activa">Info</div>
+				</div>
+				<h3>Variables</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<li>Lenguaje débilmente tipado.</li>
+				<li>Las referencias son genéricas y su tipo está definido por el contenido.</li>
+				<li>Declaración mediante la palabra reservada <strong>var</strong>.</li>
+				<li>Las variables no declaradas mediante <strong>var</strong> pertenen al objeto <strong>Global</strong></li>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">4</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div class="transparencia" indice="variables">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Array</div>
+					<div class="etiqueta-activa">Ejemplo</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Variables</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var cadena = "Hola";
+var cadena = 'Adios';
+var entero = 1;
+var flotante = 1.6;
+var boolean = true; //false
+var objeto = new Object();
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">4</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="variables">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Array</div>
+					<div class="etiqueta">Ejemplo</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Variables</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var array1 = new Array(7, 5, 100);
+var array2 = ["Cuatro", "Perro", "Hola"];
+array1[2]; // 100
+array2[0]; // Cuatro
+array1.push(58); // [7,5,100,58]
+array1[3]; // 58
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">4</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div class="transparencia" indice="variables">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Lógica</div>
+					<div class="etiqueta-activa">Aritmética</div>
+				</div>
+				<h3>Operaciones básicas</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var x = 3;
+var y = 7;
+var z = x + y; // z = 10
+var resto = z % y; // resto = ¿?
+z--; y++; x *= 5;
+
+var cadena1 = "Hola, ";
+var cadena2 = '¿Qué tal';
+var saludo = cadena1 + cadena2;
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">5</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="variables">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Lógica</div>
+					<div class="etiqueta">Aritmética</div>
+				</div>
+				<h3>Operaciones básicas</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var x = 7; 
+x == 4; // false
+x === “7”; // false
+x != 6; // true
+x !== “5”; // true
+x &gt; 7; // false
+x &gt;= 7; // true
+
+&& // operador AND 
+|| // operador OR
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">5</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div id="indice_condicional" indice="condicional" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Switch</div>
+					<div class="etiqueta-activa">If</div>
+				</div>
+				<h3>Condicionales</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var x = 7;
+
+if (x < 4 && x >= 0) {
+	alert(x + “ está entre [0 Y 4)”);
+} 
+else if (((x + 8) == 15) || x == 7) {
+	alert(x + “ + 8 es igual a 15 O “ + x + “ es igual a 7”);
+} 
+else {
+	alert(x + “ no cumple ninguna condición”); 
+}
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">6</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="condicional">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Switch</div>
+					<div class="etiqueta">If</div>
+				</div>
+				<h3>Condicionales</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var recipiente = 'tetera';
+
+switch(recipiente) {
+     case 'taza':
+     	console.log('Soy una taza'); 
+     	break; 
+     case 'tetera':
+        console.log('Soy una tetera'); 
+        break;
+     case 'vaso':
+        console.log('Soy un vaso'); 
+        break;
+     default:
+     	console.log('Soy un/a ' + recipiente);
+}
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">6</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div id="indice_bucles" indice="bucles" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Do-While</div>
+					<div class="etiqueta">While</div>
+					<div class="etiqueta">For-In</div>
+					<div class="etiqueta-activa">For</div>
+				</div>
+				<h3>Bucles</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var total = 0;
+var i;
+
+for(i = 0; i &lt; 10; i++) {
+	total += i;
+}
+
+alert("total = " + total);
+alert("i = " + i);
+total = 0;
+
+for(var j = 10; j > 0; j--) {
+	total += i; 
+}
+
+alert("total = " + total);
+alert("j = " + j);
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">6</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div class="transparencia" indice="bucles">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Do-While</div>
+					<div class="etiqueta">While</div>
+					<div class="etiqueta-activa">For-In</div>
+					<div class="etiqueta">For</div>
+				</div>
+				<h3>Bucles</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var animal = { nombre: "Tigre", patas: 4 }; 
+var texto = "";
+
+for (var propiedad in animal) {
+  texto += propiedad + " = " + animal[propiedad] + " ";
+}
+
+alert(texto);
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">6</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="bucles">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Do-While</div>
+					<div class="etiqueta-activa">While</div>
+					<div class="etiqueta">For-In</div>
+					<div class="etiqueta">For</div>
+				</div>
+				<h3>Bucles</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var total = 0;
+
+while(total &lt;= 10) {
+     if (total == 6) {
+     	break;
+     }
+
+     total += 1; 
+}
+
+alert("total = " + total);
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">6</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="bucles">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Do-While</div>
+					<div class="etiqueta">While</div>
+					<div class="etiqueta">For-In</div>
+					<div class="etiqueta">For</div>
+				</div>
+				<h3>Bucles</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var total = 0;
+
+do {
+	total += 1;
+} 
+while (total &lt;= 10);
+
+alert("total = " + total);
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">6</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div id="indice_funciones" indice="funciones" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Ejemplo 2</div>
+					<div class="etiqueta-activa">Ejemplo 1</div>
+				</div>
+				<h3>Funciones</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+function sumaresta(op1, op2, operacion) {
+     var resultado = 0;
+     
+     switch(operacion) {
+          case “+”:
+               return resultado = op1 + op2;
+          case “-”:
+               return resultado = op1 - op2;
+     }
+     
+     return resultado;
+}
+
+alert("2 + 3 = " + sumaresta(2, 3, '+'));
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">7</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div class="transparencia" indice="funciones">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Ejemplo 2</div>
+					<div class="etiqueta">Ejemplo 1</div>
+				</div>
+				<h3>Funciones</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+function calcularPrecio(precio, IVA) {
+	var gastosEnvio = 6.95;
+	var precioConIVA = (1 + IVA / 100) * precio;
+	var total = precioConIVA + gastosEnvio;
+	
+	return total;
+}
+ 
+var precio1 = calculaPrecioTotal(23.34, 21);
+var precio2 = calculaPrecioTotal(15.20, 4);
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">7</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div class="transparencia" indice="funciones">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Constr. 2</div>
+					<div class="etiqueta">Constr. 1</div>
+					<div class="etiqueta">JSON</div>
+					<div class="etiqueta-activa">Objeto</div>
+				</div>
+				<h3>Objetos</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var objeto = new Object();
+objeto.nombre = "Mi objeto";
+
+alert(objeto["nombre"]);
+
+objeto["nombre"] = "Otro objeto";
+
+alert(objeto.nombre);
+
+var boolean = new Boolean(false);
+var fecha = new Date();
+var cadena = new String("999");
+var numero = new Number(33);
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">8</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="funciones">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Constr. 2</div>
+					<div class="etiqueta">Constr. 1</div>
+					<div class="etiqueta-activa">JSON</div>
+					<div class="etiqueta">Objeto</div>
+				</div>
+				<h3>Objetos</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var objeto = { nombre: "Mi objeto", valor: 3 };
+
+alert(objeto["nombre"] + " " + objeto["valor"]);
+
+objeto["nombre"] = "Otro objeto";
+
+alert(objeto.nombre);
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">8</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="funciones">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Constr. 2</div>
+					<div class="etiqueta-activa">Constr. 1</div>
+					<div class="etiqueta">JSON</div>
+					<div class="etiqueta">Objeto</div>
+				</div>
+				<h3>Objetos - Funciones constructoras</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+function Objeto(nombre, valor) {
+	this.nombre = nombre;
+	this.valor = valor;
+	
+	this.info1 = function() {
+		return nombre + " " + valor;
+	}
+	
+	this.info2 = function() {
+		return info();
+	}
+	
+	function info() {
+		return this.nombre + " " + this.valor;
+	}
+}
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">8</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div class="transparencia" indice="funciones">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Constr. 2</div>
+					<div class="etiqueta">Constr. 1</div>
+					<div class="etiqueta">JSON</div>
+					<div class="etiqueta">Objeto</div>
+				</div>
+				<h3>Objetos - Funciones constructoras</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var objeto = new Objeto("Mi objeto", 3);
+
+alert(objeto.nombre);
+alert(objeto.info1());
+alert(objeto.info2());
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">8</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div id="indice_dom" indice="dom" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Prop. 2</div>
+					<div class="etiqueta">Prop. 1</div>
+					<div class="etiqueta">Ejemplo 2</div>
+					<div class="etiqueta">Ejemplo 1</div>
+					<div class="etiqueta-activa">Info</div>
+				</div>
+				<h3>DOM</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>DOM: Document Object Model.</li>
+					<li>Es un objeto que representa la estructura del documento HTML.</li>
+					<li>Nos permite acceder al documento para leer y modificar sus elementos y propiedades.</li>
+					<li>El estándar establece las librerías que implementa el navegador para acceder al DOM.</li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">9</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="dom">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Prop. 2</div>
+					<div class="etiqueta">Prop. 1</div>
+					<div class="etiqueta">Ejemplo 2</div>
+					<div class="etiqueta-activa">Ejemplo 1</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>DOM</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+&lt;body&gt;
+     &lt;div id = "elemento1"&gt;Soy el elemento 1&lt;/div&gt;
+     &lt;div id = "elemento2"&gt;Soy el elemento 2&lt;/div&gt;
+&lt;/body>
+
+&lt;script type=“text/javascript”&gt;
+	var html = document.getElementById(“elemento2”).innerHTML;
+	
+	document.getElementById(“elemento2”).innerHTML = 
+	“Cambio el contenido del elemento 2”;
+&lt;/script&gt;
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">9</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="dom">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Prop. 2</div>
+					<div class="etiqueta">Prop. 1</div>
+					<div class="etiqueta-activa">Ejemplo 2</div>
+					<div class="etiqueta">Ejemplo 1</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>DOM</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var boton = document.createElement("button");
+
+boton.id = "miBoton";
+boton.className = "miClase";
+
+var div = document.getElementById("miDiv");
+
+div.appendChild(boton);
+
+div.style.color = 'red';
+
+div.style.backgroundColor = 'blue';
+
+div.style.border = "1px solid green";
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">9</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="dom">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Prop. 2</div>
+					<div class="etiqueta-activa">Prop. 1</div>
+					<div class="etiqueta">Ejemplo 2</div>
+					<div class="etiqueta">Ejemplo 1</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>DOM</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>elemento.childNodes</li>
+					<li>elemento.firstChild</li>
+					<li>elemento.lastChild</li>
+					<li>elemento.previousSibling</li>
+					<li>elemento.nextSibling</li>
+					<li>elemento.setAttribute(nombre_atributo, valor_atributo)</li>
+					<li>elemento.removeAttribute(nombre_atributo)</li>
+					<li>elemento.appendChild(elemento)</li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">9</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="dom">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Prop. 2</div>
+					<div class="etiqueta">Prop. 1</div>
+					<div class="etiqueta">Ejemplo 2</div>
+					<div class="etiqueta">Ejemplo 1</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>DOM</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>elemento.insertBefore(nuevo_elemento, elemento_existente)</li>
+					<li>elemento.removeChild(elemento)</li>
+					<li>elemento.getElementsByTagName(nombre_etiqueta)</li>
+					<li>document.createElement(nombre_elemento)</li>
+					<li>document.createTextNode(texto)</li>
+					<li>document.getElementById(identificador)</li>
+				</ul>
+				<a href=˝http://www.w3schools.com/dom/dom_element.asp">Más información</a>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">9</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div id="indice_eventos" indice="eventos" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Teclado</div>
+					<div class="etiqueta">Ratón</div>
+					<div class="etiqueta">Ejemplo</div>
+					<div class="etiqueta-activa">Info</div>
+				</div>
+				<h3>Eventos</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>Los eventos son respuestas a acciones de usuario.</li>
+					<li>El navegador tiene el control sobre el documento.</li>
+					<li>Nosotros podemos indicarle al navegador qué hacer ante un evento dado sobre un elemento en concreto.</li>
+					<li><a href="http://www.w3schools.com/jsref/dom_obj_event.asp">Más información</a></li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">10</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="eventos">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Teclado</div>
+					<div class="etiqueta">Ratón</div>
+					<div class="etiqueta-activa">Ejemplo</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Eventos</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+var boton1 = document.getElementById("boton1");
+
+boton1.onclick = function() {
+	alert("Has pulsado el botón 1");
+};
+
+var boton2 = document.getElementById("boton2");
+
+if (boton2.attachEvent) // Internet Explorer
+	boton2.attachEvent('click', pulsarBoton);
+else
+	boton2.addEventListener('click', pulsarBoton, false); // Resto
+	
+function pulsarBoton() {
+	alert("Has pulsado un botón");
+}
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">10</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="eventos">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Teclado</div>
+					<div class="etiqueta-activa">Ratón</div>
+					<div class="etiqueta">Ejemplo</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Eventos de ratón</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>onclick</li>
+					<li>ondblclick</li>
+					<li>onmousedown</li>
+					<li>onmousemove</li>
+					<li>onmouseover</li>
+					<li>onmouseout</li>
+					<li>onmouseup</li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">10</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="eventos">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta-activa">Teclado</div>
+					<div class="etiqueta">Ratón</div>
+					<div class="etiqueta">Ejemplo</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Eventos de teclado</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>onkeydown</li>
+					<li>onkeyup</li>
+					<li>onkeypress</li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">10</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div class="transparencia" indice="eventos">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Otros</div>
+					<div class="etiqueta">Teclado</div>
+					<div class="etiqueta">Ratón</div>
+					<div class="etiqueta">Ejemplo</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Otros eventos</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>onchange</li> 
+					<li>onsubmit</li>
+					<li>onload</li>
+					<li>onfocus</li>
+					<li>onblur</li>
+				</ul>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">10</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+		<div id="indice_jquery" indice="jquery" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Funciones</div>
+					<div class="etiqueta">Objeto</div>
+					<div class="etiqueta-activa">Info</div>
+				</div>
+				<h3>jQuery</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>jQuery es la librería en JavaScript más conocida y utilizada.</li>
+					<li>Permite realizar la codificación rápidamente.</li>
+					<li>Suele facilitar los problemas de compatibilidad entre navegadores.</li>
+				</ul>
+				Para poder utilizar jQuery debemos incluir la librería.
+				<pre class="prettyprint">
+&lt;script src = "jquery.js"&gt;&lt;/script&gt;
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">11</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div id="indice_jquery" indice="jquery" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Funciones</div>
+					<div class="etiqueta-activa">Objeto</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Objeto jQuery</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<ul>
+					<li>jQuery está contenida en un objeto llamado <strong>jQuery</strong>.</li>
+					<li>El objeto es normalmente abreviado por <strong>$</strong></li>
+				</ul>
+				Ejemplos:
+				<pre class="prettyprint">
+$("div.normal");
+$("#miClase");
+$("tr");
+$("div.normal").get(0);
+
+$(document).ready(function() {
+  ...
+});
+
+$(function(){ ... });
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">11</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div id="indice_jquery" indice="jquery" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta-activa">Funciones</div>
+					<div class="etiqueta">Objeto</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Objeto jQuery</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<pre class="prettyprint">
+$("p").hide();
+$("div").show().slideUp();
+$("div").show().slideUp(500);
+$("div").show().delay(500).slideUp();
+
+$(this);
+
+$("#miImagen").attr("src", "imagen.jpg");
+
+$("div#miDiv").text("Hola");
+
+var data = $("input#nombre").val();
+
+$("&lt;h2&gt;email&lt;/h2&gt;").insertBefore("div.email");
+$("div.email").before("&lt;h2&gt;email&lt;/h2&gt;");
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">11</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div id="indice_jquery" indice="jquery" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta-activa">Otros</div>
+					<div class="etiqueta">Funciones</div>
+					<div class="etiqueta">Objeto</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Objeto jQuery</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<h4>Bucles</h4>
+				<pre class="prettyprint">
+$("div").each( function (){ ... } );
+
+$("div").each(function() {
+              $(this).html("");
+} );
+				</pre>
+				<h4>Eventos</h4>
+				<pre class="prettyprint">
+$("#b1").click(function(){ ... });
+				</pre>
+				.keydown(), .mousemove(), .keyup(), .load()...
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">11</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+		
+		<div id="indice_jquery" indice="jquery" class="transparencia">
+			<header>
+				<div class="etiquetas">
+					<div class="etiqueta-activa">Otros</div>
+					<div class="etiqueta">Otros</div>
+					<div class="etiqueta">Funciones</div>
+					<div class="etiqueta">Objeto</div>
+					<div class="etiqueta">Info</div>
+				</div>
+				<h3>Objeto jQuery</h3>
+			</header>
+			<br class="clear" />
+			<div class="cuerpo">
+				<h4>Animación</h4>
+				<ul>
+					<li>.hide() / .show()</li>
+					<li>.fadeIn() / .fadeOut()</li>
+					<li>.slideDown() / .slideUp()</li>
+				</ul>
+				<pre class="prettyprint">
+$("#id").fadeIn(500); 
+$("div").hide().fadeIn(500).fadeOut(500);
+
+$("#id2").fadeOut ( 500,
+                    function () {
+                    $(this).html('');
+                    }
+);
+				</pre>
+			</div>
+			<footer class="paginacion">
+				<div class="anterior paginado">&lt;</div>
+				<div class="pagina paginado">11</div>
+				<div class="posterior paginado">&gt;</div>
+			</footer>
+		</div>
+
+	</body>
+</html>
