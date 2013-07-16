@@ -1,0 +1,205 @@
+body {
+	background-color: #aba8a1;
+}
+
+h2 {
+	font-family: 'Advent Pro', sans-serif;
+	color: #403b2f;
+	font-weight: 100;
+	font-size: 1.5em;
+	margin: 0px;
+}
+
+h1 {
+	font-family: 'Euphoria Script', cursive;
+	color: #403b2f;
+	font-weight: 100;
+	font-size: 2.5em;
+	margin: 0px;
+}
+
+h3 {
+	font-family: 'Euphoria Script', cursive;
+	color: #655d49;
+	font-size: 2em;
+	font-weight: 100;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+h4 {
+	font-family: 'Euphoria Script', cursive;
+	color: #655d49;
+	font-size: 1.5em;
+	font-weight: 100;
+	margin: 0px;
+}
+
+body > header {
+	width: 800px;
+	margin: 20px auto 0px auto;
+}
+
+.transparencia { 
+	clear: both;
+	width: 740px;
+	margin: 0 auto;
+	background-color: #f9f5eb;
+	padding: 15px 30px 20px 30px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	box-shadow: 0 0 15px #444;
+	height: 480px;
+}
+
+.cuerpo {
+	color: #333;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+	line-height: 2em;
+	height: 350px;
+}
+
+li {
+	list-style-type: square;
+}
+
+.etiquetas {
+	width: 50%;
+	float: right;
+	overflow: auto;
+	margin-top: 0px;
+	padding-left: 20px;
+}
+
+.etiqueta-activa, .etiqueta {
+	float: right;
+	width: 50px;
+	height: 40px;
+	padding: 20px 5px 0px 5px;
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 0.8em;
+	text-align: center;
+	margin-left: 10px;
+	border-radius: 30px;
+}
+
+.etiqueta-activa {
+	background-color: #403b2f;
+	color: #f9f5eb;
+}
+
+.etiqueta {
+	background-color: #aba8a1;
+	color: #403b2f;
+}
+
+a {
+	color: #01A9DB;
+}
+
+.paginacion {
+	width: 150px;
+	margin: 0 auto;
+	font-size: 2em;
+	font-family: 'Advent Pro', sans-serif;
+	color: #403b2f;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.paginado {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+.pagina {
+	border-radius: 22px;
+	border: 2px solid #403b2f;
+	color: #403b2f;
+	text-align: center;
+}
+
+.anterior {
+	cursor: pointer;
+}
+
+.posterior {
+	text-align: right;
+	cursor: pointer;
+}
+
+#logos {
+	width: 50%;
+	float: right;
+	margin-right: 20px;
+}
+
+.logo {
+	width: 80px;
+	height: 55px;
+	float: right;
+	text-align: center;
+	border-radius: 40px;
+	margin-left: 20px;
+	padding-top: 25px;
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 1.5em;
+}
+
+.js {
+	background-color: #fc0;
+	color: #333;
+}
+
+.html {
+	background-color: #ff4100;
+	color: #fff;
+}
+
+.css {
+	background-color: #0489B1;
+	color: #fff;
+}
+
+nav {
+	margin-top: 25px;
+	overflow: auto;
+}
+
+.separador {
+	display: none;
+}
+
+nav a {
+	text-decoration: none;
+	width: 76px;
+	height: 46px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+	border-radius: 40px;
+	padding-top: 30px;
+	text-align: center;
+	color: #403b2f;
+	border: 2px solid #655d49;
+	font-family: 'Advent Pro', sans-serif;
+	cursor: pointer;
+}
+
+nav a.activo {
+	background-color: #403b2f;
+	color: #aba8a1;
+	border-color: #aba8a1;
+}
+
+.clear{
+	clear: both;
+}
+
+pre {
+	border: none;
+	line-height: 1.3em;
+}
