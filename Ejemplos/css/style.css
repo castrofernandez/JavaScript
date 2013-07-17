@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Electrolize;
+}
+h1{
+	text-align:center;
+	margin-top: 30px;
+}
+.clearboth{
+	clear: both;
+}
+#calculadora{
+	border: solid 2px #e0e0e0;
+	width: 500px;
+	margin: 10px auto;
+	padding: 10px;
+}
+#operandos{
+	float: left;
+	margin-top: 25px;
+}
+#operandos p{
+	margin: 10px;
+}
+#operandos label{
+	display: block;
+	float: left;
+	padding: 10px;
+	width: 100px;
+}
+#operandos input{
+	padding: 5px;
+	margin: 5px 0;
+	width: 60px;
+}
+#operaciones{
+	float: left;
+	width: 40px;
+}
+#operaciones .operacion{
+	border: solid 1px #888;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	box-shadow: 0 0 5px #e0e0e0;
+}
+#operaciones .operacion:hover{
+	cursor: pointer;
+	background: #e0e0e0;
+}
+
+#clase_operacion{
+	text-align: center;
+	margin-top: 10px;
+}
+
+#resultado {
+	border: solid 1px #e0e0e0;
+	box-shadow: inset 0 0 15px #e0e0e0;
+	float: left;
+	font-size: 50px;
+	margin-top: 15px;
+	margin-left: 40px;
+	padding: 10px;
+	width: 150px;
+	text-align: center;
+}
+
+#historial_operaciones{
+	border: solid 2px #e0e0e0;
+	width: 500px;
+	margin: 10px auto;
+	padding: 10px;
+}
+#mostrar_resultados p{
+	font-size: 20px;
+	margin: 5px;
+}
+
+
+/*****************************************/
+/********** CSS PARA CONCIERTOS **********/
+/*****************************************/
+
+#conciertos{
+	width: 1000px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#conciertos h2{
+	text-align: center;
+}
+
+/* CSS PARA LOS EFECTOS DE LOS CONCIERTOS */
+.concierto{
+	float: left;
+	border: solid 2px #888;
+	width: 260px;
+	height: 230px;
+	margin: 14px;
+	padding: 20px;
+	text-align: center;
+}
+#conciertos .concierto:hover{
+	background: #e0e0e0;
+	cursor: pointer;
+}
+#conciertos .concierto.selected{
+	background: #F2D479;
+}
+
+
+#conciertos .concierto h3{
+	font-size: 20px;
+}
+.concierto .precio{
+	font-size: 25px;
+}
+.concierto .precio span{
+	font-weight: bold;
+}
+.concierto .cartel img{
+	height: 150px;
+	border: solid 1px #e0e0e0;
+	box-shadow: 0 0 15px #e0e0e0;
+}
+#conciertos .concierto .entradas{
+	display: none;
+}
+
+/* CSS PARA LOS EFECTOS DE LOS BOTONES*/
+.boton{
+	text-align: center;
+	border-radius: 5px;
+	border: solid 1px #888;
+	width: 300px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 0 0 15px #e0e0e0;
+}
+.boton:hover{
+	background: #e0e0e0;
+	cursor: pointer;
+}
+
+
+#datos-compra{
+	width: 1000px;
+	margin: auto;
+}
+#datos-compra h2{
+	text-align: center;
+}
+#datos-compra .concierto{
+	height: 260px;
+}
+#datos-compra .concierto .entradas{
+	display: inherit;
+}
+#datos-compra .concierto .entradas .nentradas{
+	width: 30px;
+	padding: 5px;
+}
+#datos-compra #precio-total{
+	clear: both;
+	font-size: 50px;
+	text-align: center;
+}
+#datos-compra #precio-total #cantidad{
+	font-weight: bolder;
+}

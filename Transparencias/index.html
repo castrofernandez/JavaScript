@@ -1148,17 +1148,17 @@ $("div.email").before("&lt;h2&gt;email&lt;/h2&gt;");
 			<div class="cuerpo">
 				<h4>Bucles</h4>
 				<pre class="prettyprint">
-$("div").each( function (){ ... } );
+$("div").each(function (){ ... } );
 
-$("div").each(function() {
-              $(this).html("");
-} );
+$("div").each(function() { $(this).html(""); } );
+
+$("#boton").toggle(function() { ... }, function() { ... }, ...);
 				</pre>
 				<h4>Eventos</h4>
 				<pre class="prettyprint">
 $("#b1").click(function(){ ... });
 				</pre>
-				.keydown(), .mousemove(), .keyup(), .load()...
+				.keydown(), .mousemove(), .keyup(), .load(), .hover(),...
 			</div>
 			<footer class="paginacion">
 				<div class="anterior paginado">&lt;</div>

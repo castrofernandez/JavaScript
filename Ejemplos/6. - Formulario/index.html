@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="form.js" type="text/javascript"></script>
+		<link rel=StyleSheet href="form.css" type="text/css">
+		<title>Formulario</title>
+	</head>
+	<body>
+			<form onsubmit="return validacion();">
+				<div class='field'>
+					<label for='name'>Nombre:
+						<input type='text' name='nombre' id='nombre' />
+					</label>
+				</div>
+				<div class='field'>
+					<label for='name'>Dirección:
+						<input type='text' name='direccion' id='direccion' />
+					</label>
+				</div>
+				<div class='field'>
+					<label for='name'>Identificador:
+						<input type='text' name='ID' id='ID' />
+					</label>
+				</div>
+				<br />
+				<input type='submit' class='submit' value='Enviar' />
+			</form>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Entradas conciertos San Mateo</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="ejemplo3.js"></script>
+	</head>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			cargarEfectosConciertos();
+		});
+	</script>
+	<body>
+		<h1>Entradas conciertos San Mateo</h1>
+		<div id="conciertos">
+			<h2>Paso 1: Selección de conciertos</h2>
+			<p>Selecciona los conciertos a los que deseas asistir.</p>
+			<div class="concierto">
+				<h3>Red Hot Chili Peppers</h3>
+				<p class="cartel"><img src="http://persimusic.files.wordpress.com/2010/05/red-hot-chili-peppers-w05.jpg"/></p>
+				<p class="fecha">15-09-2012 a las 22:00</p>
+				<p class="precio"><span>40</span>€</p>
+				<p class="entradas">Entradas: <input type="number" class="nentradas" min="1" max="10" value="1" autocomplete="off"/></p>
+			</div>
+			<div class="concierto">
+				<h3>Amaral</h3>
+				<p class="cartel"><img src="http://redaccionatomica.com/admin/private/imagenes_noticias/2128.jpg"/></p>
+				<p class="fecha">16-09-2012 a las 21:30</p>
+				<p class="precio"><span>25</span>€</p>
+				<p class="entradas">Entradas: <input type="number" class="nentradas" min="1" max="10" value="1" autocomplete="off"/></p>
+			</div>
+			<div class="concierto">
+				<h3>Love of Lesbian</h3>
+				<p class="cartel"><img src="http://www.entradasyconciertos.com/images/love-of-lesbian.jpg"/></p>
+				<p class="fecha">18-09-2012 a las 22:00</p>
+				<p class="precio"><span>14</span>€</p>
+				<p class="entradas">Entradas: <input type="number" class="nentradas" min="1" max="10" value="1" autocomplete="off"/></p>
+			</div>
+			<div class="concierto">
+				<h3>Fito y Fitipaldis</h3>
+				<p class="cartel"><img src="http://vlifenight.com/wp-content/uploads/2012/06/fito-y-fitipaldis.jpg"/></p>
+				<p class="fecha">19-09-2012 a las 00:00</p>
+				<p class="precio"><span>18</span>€</p>
+				<p class="entradas">Entradas: <input type="number" class="nentradas" min="1" max="10" value="1" autocomplete="off"/></p>
+			</div>
+			<div class="concierto">
+				<h3>Marea</h3>
+				<p class="cartel"><img src="http://www.myfeetinflames.com/wp-content/uploads/2012/01/marea1.jpg"/></p>
+				<p class="fecha">19-09-2012 a las 21:00</p>
+				<p class="precio"><span>12</span>€</p>
+				<p class="entradas">Entradas: <input type="number" class="nentradas" min="1" max="10" value="1" autocomplete="off"/></p>
+			</div>
+			<div class="concierto">
+				<h3>Isabel Pantoja</h3>
+				<p class="cartel"><img src="http://www.musica-letras.com/imagen_cantante/98_3.jpg"/></p>
+				<p class="fecha">21-09-2012 a las 22:00</p>
+				<p class="precio"><span>30</span>€</p>
+				<p class="entradas">Entradas: <input type="number" class="nentradas" min="1" max="10" value="1" autocomplete="off"/></p>
+			</div>
+			<div class="clearboth"><p class="boton">Continuar compra</p></div>
+		</div>
+
+		<div id="datos-compra">
+			<h2>Paso 2: Datos de la compra</h2>
+			<p>Estos son los conciertos que has seleccionado para tu compra. Si lo deseas, puedes volver al Paso 1 para marcar más conciertos.</p>
+			<p class="boton volver">Volver al Paso 1</p>
+			<div id="conciertos-final">
+
+			</div>
+			<div id="precio-total">
+				<p>Precio total: <span id="cantidad">0</span>€</p>
+			</div>
+		</div>
+	</body>
+</html>
