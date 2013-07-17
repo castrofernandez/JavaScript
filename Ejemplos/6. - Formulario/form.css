@@ -1,0 +1,38 @@
+form
+{
+	width: 230px;
+	margin: 0 auto;
+}
+
+input
+{
+	float: right;
+}
+
+div
+{
+	clear: both;
+}
+
+.submit
+{
+	float: left;
+	width: 230px;
+}
+
+.field
+{
+	height: 30px;
+	margin-bottom: 5px;
+	border: 1px solid #FFF;
+	padding: 5px;
+}
+
+.empty
+{
+	height: 30px;
+	margin-bottom: 5px;
+	background-color: #F5A9BC;
+	border: 1px solid #8A0829;
+	padding: 5px;
+}

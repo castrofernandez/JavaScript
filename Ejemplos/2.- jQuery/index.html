@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora con jQuery</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="ejemplo2.js"></script>
+	</head>
+	<script type="text/javascript">
+		$(document).ready(function () {	
+			cargarBotonesCalculadora();			
+			cargarEfectosRaton();
+		});
+	</script>
+	<body>
+		<h1>Calculadora con jQuery</h1>
+		<div id="calculadora">
+			<div id="operandos">
+				<p><label for="op1">Operando 1:</label> <input type="number" name="op1" id="op1" min="0" /></p>
+				<p><label for="op2">Operando 2:</label> <input type="number" name="op2" id="op2" min="0" /></p>
+			</div>
+			
+			<div id="operaciones">
+				<p class="operacion">+</p>
+				<p class="operacion">-</p>
+				<p class="operacion">*</p>
+				<p class="operacion">/</p>
+				<p class="operacion">%</p>
+			</div>
+			<div id="clase_operacion">Selecciona operación</div>
+			<div id="resultado"><span>0</span></div>
+			<div class="clearboth"></div>
+		</div>
+		<div id="historial_operaciones">
+			<h2>Historial de operaciones</h2>
+			<input type="submit" value="Actualizar historial" onclick="actualizarOperaciones();" />
+			<div id="mostrar_resultados">
+			</div>
+		</div>
+	</body>
+</html>

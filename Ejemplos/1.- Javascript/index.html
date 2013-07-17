@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora con Javascript</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" media="all" href="../css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="ejemplo1.js"></script>
+	</head>
+	<body>
+		<h1>Calculadora con Javascript</h1>
+		<div id="calculadora">
+			<div id="operandos">
+				<p><label for="op1">Operando 1:</label> <input type="number" name="op1" id="op1" min="0" /></p>
+				<p><label for="op2">Operando 2:</label> <input type="number" name="op2" id="op2" min="0" /></p>
+			</div>
+			
+			<div id="operaciones">
+				<p class="operacion" onclick="calcularResultado(this);" onmouseover="ratonEntra(this);" onmouseout="ratonSale();">+</p>
+				<p class="operacion" onclick="calcularResultado(this);" onmouseover="ratonEntra(this);" onmouseout="ratonSale();">-</p>
+				<p class="operacion" onclick="calcularResultado(this);" onmouseover="ratonEntra(this);" onmouseout="ratonSale();">*</p>
+				<p class="operacion" onclick="calcularResultado(this);" onmouseover="ratonEntra(this);" onmouseout="ratonSale();">/</p>
+				<p class="operacion" onclick="calcularResultado(this);" onmouseover="ratonEntra(this);" onmouseout="ratonSale();">%</p>
+			</div>
+			<div id="clase_operacion">Selecciona operación</div>
+			<div id="resultado">0</div>
+			<div class="clearboth"></div>
+		</div>
+		<div id="historial_operaciones">
+			<h2>Historial de operaciones</h2>
+			<input type="submit" value="Actualizar historial" onclick="actualizarOperaciones();" />
+			<div id="mostrar_resultados">
+			</div>
+		</div>
+	</body>
+</html>
