@@ -1,0 +1,43 @@
+<script src = http://code.jquery.com/jquery-1.7.1.min.js></script>
+<style>
+	.externo {position: relative; border: 1px solid grey; overflow: hidden; height: 300px; width: 400px; margin-top: 50px;}
+	.sub {width: 380px;  background: gray; color: white;position: absolute; opacity: 0.0; top: -110px;line-height: 33px; font-size: 20px; padding: 10px;}
+	.descripcion {background: black; color: white; line-height: 30px; font-size: 20px; padding: 10px;}
+	.picture {position: relative; overflow: hidden; height: 266px; width: 400px;}
+</style>
+
+<script>
+	$(function () {
+	
+	$(".externo").hover (
+					//This function runs when you hover over an element with the class 'externo'
+					function(){$(this).find(".sub").animate ({top: "0px", opacity: 1},1000);}  
+				
+					, 
+					
+					//This function runs when you move off an element with the class 'externo'
+					function(){$(this).find('.sub').animate ({top: "-200px", opacity: 0},1000);}
+	)
+	 
+	})
+</script>
+
+<div class = externo>
+	<div class = "descripcion">Título de la imagen</div>
+	<div class = picture>
+		<div class = "sub">
+			Ésta es la descripción de la imagen.
+		</div>
+		<img src = "pic1.jpg">
+	</div>
+</div>
+
+<div class = externo>
+	<div class = "descripcion">Título de la imagen</div>
+	<div class = picture>
+		<div class = "sub">
+			Ésta es la descripción de la imagen. 
+		</div>
+		<img src = "pic2.jpg">
+	</div>
+</div>
