@@ -10,12 +10,12 @@
 	$(function () {
 	
 	$(".externo").hover (
-					//This function runs when you hover over an element with the class 'externo'
+					// Se lanza cuando el cursor pasa por encima de un elemento de la clase 'externo'
 					function(){$(this).find(".sub").animate ({top: "0px", opacity: 1},1000);}  
 				
 					, 
 					
-					//This function runs when you move off an element with the class 'externo'
+					// Se lanza cuando el cursor deja de estar encima de un elemento de la clase 'externo'
 					function(){$(this).find('.sub').animate ({top: "-200px", opacity: 0},1000);}
 	)
 	 
