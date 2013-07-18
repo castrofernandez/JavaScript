@@ -1,0 +1,15 @@
+Contenido de las carpetas
+-------------------------
+
+ - Transparencias: documento utilizado en la presentación de clase. Está realizado en HTML, CSS y JavaScript (Se utiliza jQuery).
+ - Calcularora: ejemplo de una calculadora. HTML, CSS y JavaScript.
+ - Ejemplos:
+ 		1. - JavaScript: calculadora más sencilla que la anterior.
+ 		2. - jQuery: mismo ejemplo anterior utilizando jQuery.
+ 		3. - jQuery avanzado: ejemplo de compra de entradas. Utiliza jQuery.
+ 		4. - Numeros: en este ejemplo tenemos un documento con una caja de texto, si escribimos algo y pulsamos en "Generar texto" vemos que se genera un trozo de contenido HTML mostrando ese texto con diferentes formatos y estilos. Si pulsamos sobre el botón "Mostrar HTML" vemos el contenido que se ha generado al pulsar el botón de "Generar texto".
+ 		5. - Enlaces: El documento HTML de este ejemplo tiene una serie de enlaces. Algunos de ellos tienen un atributo "rel", pare estos últimos mediante JavaScript se inserta una imagen antes del enlace y otra después del mismo.
+ 		6. - Formulario: En este ejemplo se muestra un formulario, al pulsar el botón mediante JavaScript comprobamos qué cajas de texto han quedado sin rellenar y se marcan en rojo.
+ 		7. - Visor: en el documento aparecen unos enlaces a imágenes, al pulsar sobre ellos vemos una visor con la imagen y un enlace para cerrarlo. Para conseguir este efecto primero creamos un DIV que ocupa todo el documento (en ancho y alto) y cuyo fondo es una imagen semitransparente. Sobre este DIV creamos otro de fondo blanco y en este último incorporamos la imagen a mostrar y el enlace de cierre.
+ 		8. - Menu: este ejemplo muestra un menú desplegable al pulsar sobre el botón que aparece. Sobre este menú si pasamos el ratón sobre los elementos vemos que se muestra su contenido mediante una animación. Utiliza jQuery
+ 		9. - Descripcion: se muestran 2 imágenes, al pasar el ratón sobre cada una de ellas se muestra una descripción mediante animación. Utiliza jQuery.
