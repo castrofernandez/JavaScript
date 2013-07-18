@@ -1,0 +1,161 @@
+@font-face {
+	font-family: 'digital';
+	src: url('font/digital.eot');
+	src: local('☺'), url('font/digital.woff') format('woff'), url('font/digital.ttf') format('truetype'), url('font/digital.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+header {
+	margin-top: 20px;
+}
+
+body {
+	width: 790px;
+	background-color: #aba8a1;
+	margin: 0 auto;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+h1 {
+	font-family: 'Advent Pro', sans-serif;
+	color: #5c5647;
+	font-weight: 100;
+	text-align: center;
+	font-size: 4em;
+	margin: 0px
+}
+
+h2 {
+	font-family: 'Advent Pro', sans-serif;
+	color: #5c5647;
+	font-weight: 100;
+	text-align: left;
+	font-size: 2em;
+	margin: 0px
+}
+
+hr {
+	color: #5c5647;
+	background-color: #5c5647;
+	height: 1px;
+	border: 0px;
+}
+
+.javascript {
+	font-family: 'Euphoria Script', cursive;
+}
+
+.instrucciones {
+	font-family: 'Advent Pro', sans-serif;
+	color: #5c5647;
+	font-size: 1.5em;
+}
+
+#operacion, #historial {
+	overflow: auto;
+}
+
+.circulo {
+	width: 150px;
+	height: 120px;
+	border-radius: 75px;
+	text-align: center;
+	background-color: #ccc;
+	float: left;
+	margin-right: 10px;
+	font-family: 'digital', cursive;
+	font-size: 100px;
+	padding-top: 30px;
+}
+
+.texto-iniciar {
+	font-size: 50px;
+	padding-top: 50px;
+	height: 100px;
+}
+
+.circulo-mini {
+	width: 100px;
+	height: 80px;
+	border-radius: 50px;
+	text-align: center;
+	background-color: #ccc;
+	float: left;
+	margin: 10px 8px 10px 0px;
+	font-family: 'digital', cursive;
+	font-size: 80px;
+	padding-top: 20px;
+}
+
+#resultado {
+	margin-right: 0px;
+}
+
+#calificacion {
+	margin: 0px;
+}
+
+.calificacion-mini {
+	font-size: 50px;
+	padding-top: 28px;
+	height: 72px;
+}
+
+#tiempo {
+	margin: 0px;
+	float: right;
+	cursor: pointer;
+	background-color: #FFBF00;
+	color: #604a06;
+}
+
+#tiempo:hover {
+	background-color: #c09619;
+}
+
+#por {
+	background-color: #be0f3e;
+	color: #550d20;
+}
+
+#igual {
+	background-color: #e8c648;
+	color: #604a06;
+}
+
+#calificacion {
+	font-size: 80px;
+	padding-top: 40px;
+	height: 110px;
+}
+
+#operando1 {
+	background-color: #14b389;
+	color: #0c392d;
+}
+
+#operando2 {
+	background-color: #01DFD7;
+	color: #084543;
+}
+
+.clear {
+	clear: both;
+}
+
+.bien {
+	background-color: #34a570;
+	color: #0d3c09;
+}
+
+.mal {
+	background-color: #d40d2b;
+	color: #3e0909;
+}
+
+.sin-resolver {
+	background-color: #ccc;
+}
