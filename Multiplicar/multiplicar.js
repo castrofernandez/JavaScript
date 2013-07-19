@@ -82,8 +82,7 @@ function Multiplicar(op1, op2, resultado, tiempo, calificacion, historial, retor
 		if (instante == 0) {
 			parar();
 			
-
-			
+			mostrarResultado();
 			incluirEnHistorial();
 			
 			retorno();
